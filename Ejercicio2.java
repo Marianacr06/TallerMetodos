@@ -10,25 +10,18 @@ package com.mycompany.taller;
  */
 public class Ejercicio2 {
     
-    public double Rectangulo (double ladoA,double ladoB, int calcular){
-        double perimetro;
-        double area;
+    public double Perimetro (double ladoA, double ladoB, String Tipocalculo ){
+        double resultado = 0;
         
-        if(calcular== 1){
-            perimetro= (ladoA*2)+(ladoB*2);
-            return perimetro;
-            
-        }else{
-            area=ladoA*ladoB;
+        if(Tipocalculo.equals("perimetro")){
+            double Perimetro = (ladoA * 2) + (ladoB * 2);
+                    return Perimetro;
+        }else if(Tipocalculo.equals("area")){
+            double area = ladoA * ladoB;
             return area;
+            
         }
-        
-        
-        
-        
-        
+        return resultado;
     }
-    
-    
     
 }
